@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Helvetica', 'Verdana', sans-serif;
+    background-color: #f8f8f8;
+    margin-left: 2em; 
+	margin-top: 1em;
+}
+
+
+.resume-headshot {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* border: 2px solid #4CAF50; */
+    border: 4px solid  #9db9b1;
+    object-fit: cover;
+}
+
+.resume-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.headshot-container {
+    flex: 0 0 auto; 
+    margin-right: 2em; 
+}
+.logo-container {
+    flex: 0 0 auto; 
+    margin-right: 2em; 
+    /* width: 50px; */
+}
+
+.resume-section {
+    margin-bottom: 2em;
+    padding: 1em; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+}
+
+.top-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 2em; 
+}
+
+.timeline-entry {
+    margin-top: 1em;
+    margin-bottom: 1em;
+	/* cursor: pointer; */
+    transition: all 0.3s ease-in-out;
+    /* align-items: center;  */
+    display: flex;
+    justify-content: start;
+}
+
+.skills-table {
+    margin-top: 1em;
+    margin-bottom: 1em;
+} 
+
+.timeline-title {
+    width: 35%;
+	cursor: pointer;
+    
+}
+/* .education {
+    width: 35%;
+} */
+
+.timeline-content {
+    display: none;
+    margin-top: 10px;
+    padding-left: 30px;
+    /* align-items: right; */
+    width: 50%;
+}
+
+th {
+    padding: 10px;
+    font:bold;
+    color:#014225;
+    /* background-color: rgb(197, 198, 199); */
+ }
+
+td {
+    padding: 10px;
+    color:#014225;
+ }
+
+/* .timeline-content h3,
+.timeline-content p {
+    margin: 5px 0;
+    color: #8b0505; 
+    
+} */
+
+/* Transition for smooth toggling of description */
+.timeline-content p {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Style for hiding/showing description */
+/* .hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+} */
+
+/* Section Styles */
+.resume-section h2 {
+    /* background-color: #4CAF50; */
+    background-color: #10624b;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 1.2em; 
+}
+
+.degree {
+    font-weight: bold;
+    display: block; 
+    margin-top: 1em; 
+}
+
+.school {
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 3em;
+}
+
+.download-button:hover {background-color: #3e8e41}
+
+.download-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
